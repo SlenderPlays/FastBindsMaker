@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fast Binds! Maker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
+		<script src="assets/vendor/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</head>
+<body>
+	<header class="header">
+		<div style="display: block">
+			<ul class="header-list">
+				<li class="header-list-item">
+					<h1 class="header-text">Fast Binds! Bind Maker</h1>
+				</li>
+				<li class="header-list-item-right" style="padding-top: 5px;">
+					<h2 class="header-text-white">Created by Zero#9455</h2>
+				</li>
+				<li class="header-list-item-right">
+						<a href="https://www.google.com"><img src="assets/images/discord.png" class="social-media-image-link"></a>
+				</li>
+			</ul>
+		</div><!--
+		<div style="display: block">
+			<ul class="header-list">		
+				<li class="header-list-item-right">
+					<a href="https://www.google.com"><img src="assets/images/discord.png" class="social-media-image-link"></a>
+				</li>
+			</ul>
+		</div>-->
+	</header>
+	<div style="margin-left: 100px;">
+		<h3 class="generate-new-text-button">+ Generate new Bind</h3>
+		<div style="margin-left: 100px;margin-right: 200px;" class="generation-form">
+			<input class="bind-text" type="text" placeholder="Type in your output text here" style="right:0%;left:0%;width: 100%;">
+			<h4 style="color: #22cc22;line-height: 1.75">
+				You may use <code>{|1|}</code> for the replacement value of field 1.</br>
+				You may use <code>{|2|}</code> for the replacement value of field 2.</br>
+				You may use <code>{|3|}</code> for the replacement value of field 3.</br>
+				You may use <code>{|A1|}</code> for the replacement value of an adder.</br>
+			</h4>
+			<p>
+			Field 1: <select class="select-one">
+					<option value="none">None</option>
+					<option value="text">Text</option>
+					<option value="dropdown">Dropdown</option>
+					<option value="adder">Adder</option>
+					</select>
+			</p>
+			<div class="select-one-text">
+				<div>
+					<p style="float: left;">Default Value: </p>
+					<span style="display:block;overflow: hidden;">
+						<input class="bind-text-one" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+					</span>
+				</div>
+			</div>
+			<p>
+			Field 2: <select class="select-two"> 
+					<option value="none">None</option>
+					<option value="text">Text</option>
+					<option value="dropdown">Dropdown</option>
+					<option value="adder">Adder</option>
+					</select>
+			</p>
+			<div class="select-two-text">
+					<div>
+						<p style="float: left;">Default Value: </p>
+						<span style="display:block;overflow: hidden;">
+							<input class="bind-text-two" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+						</span>
+					</div>
+				</div>
+			<p>
+			Field 3: <select class="select-three">
+					<option value="none">None</option>
+					<option value="text">Text</option>
+					<option value="dropdown">Dropdown</option>
+					<option value="adder">Adder</option>
+					</select>
+			</p>
+			<div class="select-three-text">
+					<div>
+						<p style="float: left;">Default Value: </p>
+						<span style="display:block;overflow: hidden;">
+							<input class="bind-text-three" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+						</span>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
