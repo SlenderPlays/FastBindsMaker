@@ -35,6 +35,12 @@
 	<div style="margin-left: 100px;">
 		<h3 class="generate-new-text-button">+ Generate new Bind</h3>
 		<div style="margin-left: 100px;margin-right: 200px;" class="generation-form">
+			<div>
+				<p style="float: left;">Name: </p>
+				<span style="display:block;overflow: hidden;">
+					<input class="bind-name" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 100%;">
+				</span>
+			</div>
 			<input class="bind-text" type="text" placeholder="Type in your output text here" style="right:0%;left:0%;width: 100%;">
 			<h4 style="color: #22cc22;line-height: 1.75">
 				You may use <code>{|1|}</code> for the replacement value of field 1.</br>
@@ -58,20 +64,40 @@
 					</span>
 				</div>
 			</div>
+			<div class="select-one-dropdown">
+				<div>
+					<p>Dropdown Options: </p>
+					<span style="display:block;overflow: hidden;">
+						<input class="bind-dropdown-option-one" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 50%;float:left;">
+						<input class="bind-dropdown-option-delete-one" type="submit" value="X" style="color:white;font-weight: bolder;background-color: red;margin: 16px;">
+					</span>
+					<h4 class="bind-dropdown-addOption-one" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
+				</div>
+			</div>
 			<p>
 			Field 2: <select class="select-two"> 
 					<option value="none">None</option>
 					<option value="text">Text</option>
 					<option value="dropdown">Dropdown</option>
-					<option value="adder">Adder</option>
+					<option value="adder">Stopper</option>
 					</select>
 			</p>
 			<div class="select-two-text">
-					<div>
-						<p style="float: left;">Default Value: </p>
+				<div>
+					<p style="float: left;">Default Value: </p>
 						<span style="display:block;overflow: hidden;">
-							<input class="bind-text-two" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+						<input class="bind-text-two" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+					</span>
+				</div>
+			</div>
+			<div class="select-two-dropdown">
+					<div>
+						<p>Dropdown Options: </p>
+						<span style="display:block;overflow: hidden;">
+							<input class="bind-dropdown-option-two" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 50%;float:left;">
+							<input class="bind-dropdown-option-delete-two" type="submit" value="X" style="color:white;font-weight: bolder;background-color: red;margin: 16px;">
 						</span>
+						<h4 class="bind-dropdown-addOption-two" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
 					</div>
 				</div>
 			<p>
@@ -79,17 +105,29 @@
 					<option value="none">None</option>
 					<option value="text">Text</option>
 					<option value="dropdown">Dropdown</option>
-					<option value="adder">Adder</option>
+					<option value="adder">Stopper</option>
 					</select>
 			</p>
 			<div class="select-three-text">
-					<div>
-						<p style="float: left;">Default Value: </p>
+				<div>
+					<p style="float: left;">Default Value: </p>
 						<span style="display:block;overflow: hidden;">
-							<input class="bind-text-three" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+						<input class="bind-text-three" type="text" placeholder="Type in your default text here" style="margin: 16px;width: 100%;">
+					</span>
+				</div>
+			</div>
+			<div class="select-three-dropdown">
+					<div>
+						<p>Dropdown Options: </p>
+						<span style="display:block;overflow: hidden;">
+							<input class="bind-dropdown-option-three" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 50%;float:left;">
+							<input class="bind-dropdown-option-delete-three" type="submit" value="X" style="color:white;font-weight: bolder;background-color: red;margin: 16px;">
 						</span>
+						<h4 class="bind-dropdown-addOption-three" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
 					</div>
 				</div>
+			<input type="submit" value="Generate Bind" class="submit-button">
+			<input type="text" readonly placeholder="Output" style="width:100%;margin-bottom: 200px;" class="output">
 		</div>
 	</div>
 </body>
