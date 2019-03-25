@@ -32,9 +32,9 @@
 			</ul>
 		</div>-->
 	</header>
-	<div style="margin-left: 100px;">
+	<div style="margin-left: 5%;">
 		<h3 class="generate-new-text-button">+ Generate new Bind</h3>
-		<div style="margin-left: 100px;margin-right: 200px;" class="generation-form">
+		<div style="margin-left: 5%;margin-right: 10%;" class="generation-form">
 			<div>
 				<p style="float: left;">Name: </p>
 				<span style="display:block;overflow: hidden;">
@@ -74,12 +74,61 @@
 					<h4 class="bind-dropdown-addOption-one" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
 				</div>
 			</div>
+			<div class="select-one-adder">
+				<p>Adder Options: </p>
+				<div style="margin-left: 16px;">
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Comment: </p>
+						<input class="bind-adder-comment" type="text" placeholder="Comment to be displayed." style="margin: 16px;width: 40%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Starting Number: </p>
+						<input class="bind-adder-starting-number" type="number" placeholder="Starting number." style="margin: 16px;width: 10%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Ending Number: </p>
+						<input class="bind-adder-ending-number" type="number" placeholder="Ending Number." style="margin: 16px;width: 10%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Digits to be shown: </p>
+						<input class="bind-adder-digits" type="number" placeholder="Amount of digits to be shown after dot." value="0" style="margin: 16px;width: 10%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Random: </p>
+						<input class="bind-adder-adding-number-checkbox" type="checkbox" style="margin: 16px; margin-top: 20px;float:left">
+					</span>
+					<div class="bind-adder-adding-number-container">
+						<span style="display:block;overflow: hidden;">
+							<p style="float: left;">Number to be added: </p>
+							<input class="bind-adder-adding-number" type="number" placeholder="The number to be added after the delay." style="margin: 16px;width: 10%;float:left;">
+						</span>
+					</div>
+					<div class="bind-adder-adding-number-random-container">
+						<span style="display:block;overflow: hidden;">
+							<p style="float: left;">Minimum to be added: </p>
+							<input class="bind-adder-adding-number-min" type="number" placeholder="The minimum number to be added after the delay." style="margin: 16px;width: 10%;float:left;">
+						</span>
+						<span style="display:block;overflow: hidden;">
+							<p style="float: left;">Maximum to be added: </p>
+							<input class="bind-adder-adding-number-max" type="number" placeholder="The maximum number to be added after the delay." style="margin: 16px;width: 10%;float:left;">
+						</span>
+					</div>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Delay: </p>
+						<input class="bind-adder-delay" type="number" placeholder="Delay between messages." style="margin: 16px;width: 10%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Timer name: </p>
+						<input class="bind-adder-timer-name" type="text" placeholder="Timer name useful for stoppers." style="margin: 16px;width: 40%;float:left;">
+					</span>
+				</div>
+			</div>
 			<p>
 			Field 2: <select class="select-two"> 
 					<option value="none">None</option>
 					<option value="text">Text</option>
 					<option value="dropdown">Dropdown</option>
-					<option value="adder">Stopper</option>
+					<option value="stopper">Stopper</option>
 					</select>
 			</p>
 			<div class="select-two-text">
@@ -91,21 +140,39 @@
 				</div>
 			</div>
 			<div class="select-two-dropdown">
-					<div>
-						<p>Dropdown Options: </p>
+				<div>
+					<p>Dropdown Options: </p>
+					<span style="display:block;overflow: hidden;">
+						<input class="bind-dropdown-option-two" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 50%;float:left;">
+						<input class="bind-dropdown-option-delete-two" type="submit" value="X" style="color:white;font-weight: bolder;background-color: red;margin: 16px;">
+					</span>
+					<h4 class="bind-dropdown-addOption-two" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
+				</div>
+			</div>
+			<div class="select-two-stopper">
+				<div>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Timer name: </p>
+						<input class="bind-stopper-timer-name-two" type="text" placeholder="Type in the timer's name that will be stopped." style="margin: 16px;width: 50%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Public: </p>
+						<input class="bind-stopper-public-two" type="checkbox" style="margin: 16px;margin-top: 20px;float:left;">
+					</span>
+					<div  class="bind-stopper-message-two-container">
 						<span style="display:block;overflow: hidden;">
-							<input class="bind-dropdown-option-two" type="text" placeholder="Type in your bind's name." style="margin: 16px;width: 50%;float:left;">
-							<input class="bind-dropdown-option-delete-two" type="submit" value="X" style="color:white;font-weight: bolder;background-color: red;margin: 16px;">
+							<p style="float: left;">Message: </p>
+							<input class="bind-stopper-message-two" type="text" placeholder="Message that will be shown on public cancel." style="margin: 16px;width: 50%;float:left;">
 						</span>
-						<h4 class="bind-dropdown-addOption-two" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
 					</div>
 				</div>
+			</div>
 			<p>
 			Field 3: <select class="select-three">
 					<option value="none">None</option>
 					<option value="text">Text</option>
 					<option value="dropdown">Dropdown</option>
-					<option value="adder">Stopper</option>
+					<option value="stopper">Stopper</option>
 					</select>
 			</p>
 			<div class="select-three-text">
@@ -125,7 +192,25 @@
 						</span>
 						<h4 class="bind-dropdown-addOption-three" style="	cursor: pointer;color: #22cc22;font-family: 'Times New Roman', Times, serif;margin-left: 16px;">+ Add Option</h4>
 					</div>
+			</div>
+			<div class="select-three-stopper">
+				<div>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Timer name: </p>
+						<input class="bind-stopper-timer-name-three" type="text" placeholder="Type in the timer's name that will be stopped." style="margin: 16px;width: 50%;float:left;">
+					</span>
+					<span style="display:block;overflow: hidden;">
+						<p style="float: left;">Public: </p>
+						<input class="bind-stopper-public-three" type="checkbox" style="margin: 16px;margin-top: 20px;float:left;">
+					</span>
+					<div  class="bind-stopper-message-three-container">
+						<span style="display:block;overflow: hidden;">
+							<p style="float: left;">Message: </p>
+							<input class="bind-stopper-message-three" type="text" placeholder="Message that will be shown on public cancel." style="margin: 16px;width: 50%;float:left;">
+						</span>
+					</div>
 				</div>
+			</div>
 			<input type="submit" value="Generate Bind" class="submit-button">
 			<input type="text" readonly placeholder="Output" style="width:100%;margin-bottom: 200px;" class="output">
 		</div>
